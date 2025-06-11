@@ -30,6 +30,7 @@ namespace ApiPeliculas.Controllers
             foreach (var lista in listaPeliculas)
             {
                 listaPeliculasDto.Add(_mapper.Map<PeliculaDto>(lista));
+
             }
             return Ok(listaPeliculasDto);
         }
